@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Git & GitHub</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #0d1117; /* GitHub Dark Background */
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Container & Header */
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .highlight { color: #f74e27; }     /* Git Orange */
+        .highlight-alt { color: #58a6ff; } /* GitHub Blue */
+
+        /* The Main Card */
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #8b949e;
+        }
+
+        /* Buttons */
+        .button-group {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: #238636;
+            color: white;
+            border: 1px solid rgba(240,246,252,0.1);
+        }
+
+        .btn-secondary {
+            background-color: #21262d;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Terminal Style Footer */
+        footer {
+            margin-top: 20px;
+        }
+
+        footer code {
+            background: #010409;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            color: #7ee787;
+            font-size: 0.9rem;
+            border: 1px solid #30363d;
+        }
+
+        /* Simple Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to <span class="highlight">Git</span> & <span class="highlight-alt">GitHub</span></h1>
+            <p>Your journey into version control starts here.</p>
+        </header>
+
+        <main class="card">
+            <h2>Ready to collaborate?</h2>
+            <p>Master the art of branching, committing, and pushing code to the world's largest developer community.</p>
+            
+            <div class="button-group">
+                <a href="#" class="btn btn-primary">Get Started</a>
+                <a href="#" class="btn btn-secondary">Read Docs</a>
+            </div>
+        </main>
+
+        <footer>
+            <code>$ git push origin main</code>
+        </footer>
+    </div>
+
+</body>
+</html>
